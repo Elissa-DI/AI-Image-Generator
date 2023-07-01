@@ -11,7 +11,7 @@ const FormField = (
           htmlFor={name}
           className='block text font-medium text-gray-900'
         >
-
+          {LabelName}
         </label>
 
       </div>
