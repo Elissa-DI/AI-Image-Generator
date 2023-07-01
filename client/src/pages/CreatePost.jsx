@@ -14,6 +14,10 @@ const handleChange = (e) => {
 
 }
 
+const handleSurpriseMe = () => {
+
+}
+
 const CreatePost = () => {
   const navigate = useNavigate();
   const [form, setForm] = useState({
@@ -58,9 +62,11 @@ const CreatePost = () => {
             labelName="Prompt"
             type="text"
             name="prompt"
-            placeholder="John Doe"
-            value={form.name}
+            placeholder="A plush toy robot sitting against a yellow wall"
+            value={form.prompt}
             handleChange={handleChange}
+            isSurpriseMe
+            handleSurpriseMe={handleSurpriseMe}
           />
 
         </div>
