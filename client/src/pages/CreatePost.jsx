@@ -6,10 +6,18 @@ import { preview } from '../assets';
 import { getRandomPrompt } from '../utils';
 import { FormField, Loader } from '../components';
 
-const generateImage = () => {
+const generateImage = async () => {
   if(form.prompt) {
     try {
-      set      
+      setGeneratingImg(true);
+      const response = await fetch('http://localhost:8200.api.v1.dalle'),
+        {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({ prompt: form.prompt })
+        }
     } catch (error) {
       
     }
