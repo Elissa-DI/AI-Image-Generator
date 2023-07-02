@@ -7,6 +7,13 @@ import { getRandomPrompt } from '../utils';
 import { FormField, Loader } from '../components';
 
 const generateImage = () => {
+  if(form.prompt) {
+    try {
+      set      
+    } catch (error) {
+      
+    }
+  }
 
 }
 
